@@ -12,12 +12,18 @@ for(let i = 0; i < 5; i++){
 }
 const articleElement = document.querySelector('section.grid');
 let time = 3;
+const guessNumb = []
 const timer = setInterval(function(){
     console.log(time);
     if(time <= 0){
         clearInterval(timer);
         console.log('Finito il tempo!');
         articleElement.classList.add('d-none');
+        for(let i = 0; i < 5; i++){
+            const guess = Number.parseInt(prompt('Inserisci i numeri che ti ricordi!'))
+            guessNumb.push(guess);
+        }
+        console.log(guessNumb)
     }
     time = time - 1;
 },1000);
