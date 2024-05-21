@@ -10,4 +10,13 @@ for(let i = 0; i < 5; i++){
     sectionEl.appendChild(artEl);
     artEl.append(numb);
 }
-console.log(randomFive)
+let time = 30
+const timer = setInterval(function(){
+    console.log(time);
+    if(time <= 0){
+        clearInterval(timer);
+        console.log('Finito il tempo!');
+    }
+    time = time - 1;
+},1000);
+console.log(randomFive);
