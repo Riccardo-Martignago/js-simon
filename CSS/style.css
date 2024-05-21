@@ -6,6 +6,7 @@
 body{
     font-family: sans-serif;
     font-size: 2rem;
+    background-color: aquamarine;
 }
 main{
     display: flex;
@@ -13,9 +14,9 @@ main{
     background-color: aquamarine;
 }
 section.grid{
-    margin: 4rem 0;
     width: 1000px;
     height: 200px;
+    margin: 4rem 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,4 +27,7 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+section.d-none{
+    display: none;
 }

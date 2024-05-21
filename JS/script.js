@@ -10,12 +10,14 @@ for(let i = 0; i < 5; i++){
     sectionEl.appendChild(artEl);
     artEl.append(numb);
 }
-let time = 30
+const articleElement = document.querySelector('section.grid');
+let time = 3;
 const timer = setInterval(function(){
     console.log(time);
     if(time <= 0){
         clearInterval(timer);
         console.log('Finito il tempo!');
+        articleElement.classList.add('d-none');
     }
     time = time - 1;
 },1000);
